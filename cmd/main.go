@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"github.com/EgorGorshen/forex-dot-com/pkg/logger"
+	"github.com/rs/zerolog/log"
+)
 
 func main() {
-	fmt.Printf("Hello, %s", "Egor!")
+	logger.InitLogger()
+
+	log.Info().Msg("Hello, Egor")
 }
